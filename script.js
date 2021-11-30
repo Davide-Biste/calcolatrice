@@ -1,26 +1,31 @@
 var result = document.getElementById("risultato");
 
-var calcoli = 0;
-var operatori = "+";
+var calcoli1 = "null";
+var calcoli2 = "null";
+var operator1 = "null";
+
+
 
 function add(n){
-        calcoli = n;
-        risultato();
+    if(calcoli1 === "null" && operator1 === "null"){
+        calcoli1 = n.toString();
+        result.innerHTML=calcoli1;
+    
+    }else{
+        calcoli1 = calcoli1 + n.toString();
+        result.innerHTML=calcoli1;
+    }
+        
 }
+
+
+
 function btnClick(){
-    risultato.innerHTML = calcoli;
-    calcoli = 0;
+    risultato.innerHTML = calcoli1;
+    calcoli1 = 0;
 }
 
-function operator(){
-
-}
-
-function per(x){
-    x = "*";
-    return x;
-}
-
-function risultato(){
-    result.innerHTML = calcoli + operatori + calcoli;
+function operator(p){
+    operator1 = p.toString();
+    result.innerHTML = calcoli1 + " " + p;
 }
