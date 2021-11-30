@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.calcolatrice{
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-top: 2rem;
+    border: none;
+}
+.table{
+    border: none;
+}
+td{
+    text-align: center;
+    font-size: large;
+}
